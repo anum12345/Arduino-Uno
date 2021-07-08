@@ -1,0 +1,20 @@
+#include<DHT.h>
+DHT dht(2,DHT11);
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(96000);
+  dht.begin();
+}
+void loop() {
+  
+  // put your main code here, to run repeatedly:
+  float h=dht.readHumidity();
+  float c=dht.readTemperature();
+  float f=dht.readTemperature(true);
+  float k=c+273.15;
+  Serial.println("Humidity: " +String(h) + "%");
+  Serial.println("Temperature in Celsius: " + String(c)+"*C");
+  Serial.println("Temperature in Fahrenite: " + String(f)+"*C");
+  Serial.println("Temperature in Kelvin: " + String(k)+"*C");
+  delay(1000);
+}
