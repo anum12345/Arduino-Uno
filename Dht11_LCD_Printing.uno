@@ -1,6 +1,6 @@
 #include <DHT.h>
 #include <LiquidCrystal.h>
-DHT dht(2,DHT11);
+DHT dht(8,DHT11);
 LiquidCrystal lcd(2,3,4,5,6,7);
 void setup(){
   lcd.begin(16,2);
