@@ -9,10 +9,8 @@ void setup(){
   pinMode(echopin,INPUT);  
   lcd.begin(16,2);
   Serial.begin(9600);
-  
-}
+  }
  void loop(){
-    
     digitalWrite(trigpin,LOW);
     delay(100);
     digitalWrite(trigpin,HIGH);
@@ -21,7 +19,7 @@ void setup(){
     delay(100);
     duration=pulseIn(echopin,HIGH);
     distance=0.034*duration/2.0;
-    Serial.println("Distance " +String(distance) + "cm");
-     lcd.setCursor(0,0);
-     lcd.print(distance);
+    Serial.println("Distance " +String(distance) + " cm");
+    lcd.setCursor(0,0);
+    lcd.print(distance);
  }
