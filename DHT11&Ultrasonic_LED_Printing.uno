@@ -25,7 +25,7 @@ void setup(){
     Serial.println("Distance " +String(distance) + " cm");
     lcd.setCursor(0,0);
     lcd.print(distance);
-    delay(100):
+    delay(100);
     float h=dht.readHumidity();
     float t=dht.readTemperature();
     lcd.setCursor(0,0);
