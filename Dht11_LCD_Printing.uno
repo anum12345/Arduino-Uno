@@ -1,5 +1,4 @@
 #include <DHT.h>
-#include <DHT_U.h>
 #include <LiquidCrystal.h>
 DHT dht(2,DHT11);
 LiquidCrystal lcd(2,3,4,5,6,7);
