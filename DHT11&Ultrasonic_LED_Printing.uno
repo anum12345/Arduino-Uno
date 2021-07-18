@@ -32,7 +32,7 @@ void setup(){
     lcd.print(h);
     Serial.println("Humidity" +String(h) +"%");
     lcd.setCursor(0,1);
-    Serial.print(t);
+    Serial.print(t); 
     lcd.print(t);
     Serial.println("Temperature" +String(t) +"C");
    }
