@@ -26,10 +26,10 @@ elif c=="%":
   ans=a%b
   print("Remainder is ",ans)
 elif c=="**":
-  ans=a%b
+  ans=a**b
   print("Exponential is ",ans)
 elif c=="//":
-  ans=a%b
+  ans=a//b
   print("Floor Division is ",ans)
 else:
   print("Incorrect operator")
